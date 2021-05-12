@@ -1,0 +1,471 @@
+body {
+    font-family: "標楷體";
+    background-color:			#FFF8D7;
+    text-align: center;
+    width: 1100px;
+    height: 2700px;
+    margin: 0px auto 0px auto ;
+    padding: 70px 70px;
+    letter-spacing: 5px;
+   
+  }
+
+.information_photo{
+  float:left;
+  
+  position: relative;
+}
+
+
+.information_photo img:hover {
+  transform:scale(1.2,1.2)
+  
+}
+
+.info1{
+  font-size:45px;
+  color: rgb(255, 89, 24);
+}
+
+.info2{
+  font-size:45px;
+  color: rgb(255, 89, 24);
+}
+.info3{
+  font-size:35px;
+  text-align: center;
+  -webkit-text-stroke: 1px rgb(247, 89, 40);
+  color:transparent;
+  background-color: rgb(226, 223, 10);
+}
+.info4{
+  font-size:25px;
+  color: rgb(255, 89, 24);
+  letter-spacing: 3;
+}
+
+.info5{
+  font-size:28px;
+  color: rgb(255, 89, 24);
+  letter-spacing: 3;
+  
+}
+
+.info6{
+  font-size:28px;
+  color: rgb(255, 89, 24);
+  letter-spacing: 3;
+  
+}
+
+.time-horizontal {
+  list-style-type: none;
+  border-top: 5px solid #c72727;
+  max-width: 1000px;
+  right: 5px;
+  left: 50px;
+  top:250px;
+  position: relative;
+  
+}
+
+.time-horizontal li {
+  float:left;
+  position: relative;
+  text-align: center;
+  width: 25%;
+  padding-top: 10px;
+  font-size:25px;
+  color: rgb(255, 89, 24);
+}
+
+.time-horizontal li b:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 47%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #c01a1a;
+  border-radius: 10px;
+  background: #c01a1a;
+}
+
+
+.aa{
+  width: 1080px;
+  border-color:#c46b13;
+  height: 2px;
+  background-color: #db832b;
+  position: relative;
+  margin: 0 auto; 
+}
+
+.title2{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-weight: bold;
+  border-radius: 80px;
+  color: rgb(247, 89, 40); 
+  left: 20px;
+  line-height: 0px;
+
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  
+  width:150px;
+  height: 60px;
+  line-height:60px;
+  font-weight: bold;
+  border-radius:80px;
+  color: rgb(247, 89, 40);
+  
+  
+  opacity: 1;
+}
+
+.program{
+	width: 65%;
+	transform: translate(10%,-33%);
+}
+.skillbox{
+	box-sizing: border-box;
+	flex-direction: row;
+	margin: 5px;
+	padding: 5px;
+	color:rgb(247, 89, 40);
+	font-family: "標楷體";
+	font-size: 20px;
+}
+
+
+.skill{
+	background-color: 	#FFD1A4;
+	padding: 4px;
+	box-sizing: border-box;
+	color:rgb(255, 255, 255);
+	border-radius: 50px;
+}
+.skill_level{
+	background-color: #FF9224;
+	border-radius: 50px;
+	text-align: right;
+	height:20px;
+}
+.c{
+	animation-name: skillc;
+	animation-duration: 3s;
+}
+.java{
+	animation-name: skilljava;
+	animation-duration: 3s;
+}
+.html{
+	animation-name: skillhtml;
+	animation-duration: 3s;
+}
+.jsp{
+	animation-name: skilljsp;
+	animation-duration: 3s;
+}
+.css{
+	animation-name: skillcss;
+	animation-duration: 3s;
+}
+@keyframes skillc{
+	0%{width: 0%}
+	100%{width: 78%}
+}
+@keyframes skilljava{
+	0%{width: 0%}
+	100%{width: 73%}
+}
+@keyframes skillhtml{
+	0%{width: 0%}
+	100%{width: 80%}
+}
+@keyframes skilljsp{
+	0%{width: 0%}
+	100%{width: 65%}
+}
+@keyframes skillcss{
+	0%{width: 0%}
+	100%{width: 73%}
+}
+
+
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: 			#FFDCB9;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: 	#FF8000;
+}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(120deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: 	#FFF8D7;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "標楷體";
+  color: #EA7500;
+}
+
+/*第二個圈圈*/
+.circle-wrap2 {
+  width: 150px;
+  height: 150px;
+  background: #FFDCB9;
+  border-radius: 50%;
+}
+
+.circle-wrap2 .circle2 .mask2,
+.circle-wrap2 .circle2 .fill2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap2 .circle2 .mask2 {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap2 .circle2 .mask2 .fill2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: 	#FF8000;
+}
+
+.circle-wrap2 .circle2 .mask2.full2,
+.circle-wrap2 .circle2 .fill2 {
+  animation: fill2 ease-in-out 3s;
+  transform: rotate(150deg);
+}
+
+@keyframes fill2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(150deg);
+  }
+}
+
+.circle-wrap2 .inside-circle2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #FFF8D7;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "標楷體";
+  color: #EA7500;
+}
+
+/*第三個圈圈*/
+.circle-wrap3 {
+  width: 150px;
+  height: 150px;
+  background: #FFDCB9;
+  border-radius: 50%;
+}
+
+.circle-wrap3 .circle3 .mask3,
+.circle-wrap3 .circle3 .fill3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap3 .circle3 .mask3 {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap3 .circle3 .mask3 .fill3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #FF8000;
+}
+
+.circle-wrap3 .circle3 .mask3.full3,
+.circle-wrap3 .circle3 .fill3 {
+  animation: fill3 ease-in-out 3s;
+  transform: rotate(140deg);
+}
+
+@keyframes fill3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(140deg);
+  }
+}
+
+.circle-wrap3 .inside-circle3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #FFF8D7;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 17px;
+  color: #EA7500;
+}
+
+/*第四個圈圈*/
+.circle-wrap4 {
+  width: 150px;
+  height: 150px;
+  background: #FFDCB9;
+  border-radius: 50%;
+}
+
+.circle-wrap4 .circle4 .mask4,
+.circle-wrap4 .circle4 .fill4 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap4 .circle4 .mask4 {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap4 .circle4 .mask4 .fill4 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #FF8000;
+}
+
+.circle-wrap4 .circle4 .mask4.full4,
+.circle-wrap4 .circle4 .fill4 {
+  animation: fill4 ease-in-out 3s;
+  transform: rotate(120deg);
+}
+
+@keyframes fill4 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.circle-wrap4 .inside-circle4 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #FFF8D7;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 22px;
+  color: #EA7500;
+}
+
+
+.accordion {
+  background-color:#fce6a0;
+  color: 	#ff8102;
+  cursor: pointer;
+  padding: 18px;
+		width:90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin:10px;
+  font-family: "標楷體";
+  
+}
+
+.active, .accordion:hover {
+  background-color: #fcd5ae;
+  color:black;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:#fff7a4;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width:80%;
+  font-size: 22px;
+  color:black;
+}
+.panel img{
+	width:300px;
+	height:300px;
+	float: left;
+
+}
+
+
